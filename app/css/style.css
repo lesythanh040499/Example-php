@@ -1,0 +1,527 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.left {
+    width: 20%;
+    background-color: rgb(77, 74, 94);
+    color: white;
+    position: relative;
+    float: left;
+    height: 1009px;
+}
+
+.admin {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    background-color: rgb(176, 176, 241);
+}
+.admin a{
+    text-decoration: none;
+}
+
+.menu h2 {
+    font-size: 20px;
+    margin-left: 40px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+.right {
+    width: 80%;
+    float: left;
+    box-sizing: border-box;
+    height: 1009px;
+}
+
+.header {
+    display: flex;
+    height: 50px;
+    line-height: 50px;
+    background-color: wheat;
+}
+
+.phai {
+    width: 50;
+    width: 50%;
+    text-align: right;
+    padding-right: 30px;
+}
+
+.trai {
+    width: 50%;
+    margin-left: 32px;
+}
+
+.menu ul {
+    width: 100%;
+    list-style: none;
+    /* margin-left: 40px; */
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.menu ul li {
+    width: 100%;
+    line-height: 60px;
+    padding-left: 45px;
+    height: 60px;
+    box-sizing: border-box;
+    transition: 0.4s;
+}
+
+.menu ul li:hover {
+    background-color: white;
+}
+
+.menu ul li:hover a {
+    color: black;
+}
+.menu ul li:hover .fa {
+    color: black;
+}
+
+.menu ul li a {
+    /* float: left; */
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.fa.fa-commenting,
+.fa.fa-user,
+.fa.fa-cogs,
+.fa.fa-university {
+    width: 20px;
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    margin-right: 10px;
+}
+
+
+.footerleft {
+    position: absolute;
+    background: rgb(41, 41, 48);
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    bottom: 0;
+}
+
+.container .left .footerleft .icon .fa {
+    margin-left: 50px;
+}
+
+.menu {
+    height: 621px;
+}
+
+.container .right .header .trai .fa-search {
+    margin-left: 7px;
+    cursor: pointer;
+}
+
+.trai input[type="text"] {
+    border-radius: 30px;
+    border: none;
+    height: 30px;
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+.tths {
+    width: 90%px;
+    margin: auto;
+}
+
+.tths table {
+    width: 100%;
+    border: 1px solid gainsboro;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.rows {
+    /* background-color: red; */
+    height: 40px;
+}
+
+.rows td {
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+#row-l {
+    width: 150px;
+}
+
+#row-l img {
+    width: 100%;
+    transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    cursor: pointer;
+}
+
+#row-l img:hover {
+    opacity: 0.6;
+}
+
+.conten-hs h2 {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    color: darkblue;
+}
+
+.content-hs {
+    position: relative;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding-bottom: 40px;
+}
+
+.themhangsua {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 40%;
+    z-index: 1000;
+    width: 500px;
+    height: auto;
+    background-color: antiquewhite;
+}
+
+.themhangsua table {
+    width: 400px;
+    margin: auto;
+}
+
+.themhangsua table tr {
+    height: 30px;
+    line-height: 30px;
+}
+
+.themhangsua table tr td input {
+    width: 100%;
+    height: 30px;
+    border: none;
+}
+
+.actionn {
+    text-align: center;
+}
+
+.themhangsua table tr td button {
+    width: 100px;
+    height: 30px;
+}
+
+.bt {
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 15px;
+    float: right;
+    border-radius: 10px;
+}
+
+.bt:hover {
+    background-color: blanchedalmond;
+    color: black;
+    animation-name: anmCl;
+    animation-duration: 0.5s;
+}
+
+@keyframes anmCl {
+    0% {
+        background-color: red;
+    }
+    50% {
+        background-color: bisque;
+    }
+    100% {
+        background-color: blanchedalmond;
+    }
+}
+
+.page {
+    margin-top: 7px;
+    width: 100%;
+    height: 60px;
+    position: relative;
+    top: 5px;
+}
+
+.page ul {
+    width: 100%;
+    position: absolute;
+    height: 50px;
+}
+
+.page ul li {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    text-align: center;
+    line-height: 40px;
+    float: left;
+    list-style: none;
+    margin-left: 10px;
+    display: block;
+    cursor: pointer;
+}
+
+.footer {
+    width: 100%;
+    height: 200px;
+    background-color: black;
+}
+
+.content-ls {
+    position: relative;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding-bottom: 40px;
+}
+
+.conten-ls h2 {
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    color: darkblue;
+}
+
+.active {
+    background-color: rgb(226, 156, 156);
+}
+
+.ttls table {
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.khac {
+    width: 75%;
+}
+
+.page-ls {
+    margin-top: 10px;
+    width: 100%;
+    height: 60px;
+    position: relative;
+    top: 5px;
+}
+
+.page-ls ul {
+    width: 100%;
+    position: absolute;
+    height: 40px;
+}
+
+.page-ls ul li {
+    width: 40px;
+    height: 40px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 40px;
+    float: left;
+    list-style: none;
+    margin-left: 10px;
+    display: block;
+    cursor: pointer;
+}
+
+.loaisua {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    display: none;
+    position: fixed;
+    top: 5%;
+    left: 40%;
+    z-index: 1000;
+    width: 500px;
+    height: auto;
+    background-color: antiquewhite;
+}
+
+.loaisua table {
+    width: 400px;
+    margin: auto;
+}
+
+.loaisua table tr {
+    height: 30px;
+    line-height: 30px;
+}
+
+.loaisua table tr td input {
+    width: 100%;
+    height: 30px;
+    border: none;
+}
+
+.loaisua table tr td button {
+    width: 100px;
+    height: 30px;
+}
+
+.about {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    display: none;
+    position: fixed;
+    top: 15%;
+    left: 25%;
+    z-index: 1000;
+    width: 1000px;
+    height: auto;
+    background-color: antiquewhite;
+}
+
+.about table {
+    width: 1000px;
+    margin: auto;
+}
+
+.about table tr {
+    height: 30px;
+    line-height: 30px;
+}
+
+.about table tr td img {
+    width: 200px;
+}
+
+.about table tr td button {
+    width: 100px;
+    height: 30px;
+}
+
+.mg-r {
+    position: relative;
+    padding-right: 30px;
+    box-sizing: border-box;
+}
+
+.mg-r td {
+    position: absolute;
+    left: 50%;
+}
+
+.mg-m {
+    position: relative;
+}
+
+.mg-m td button {
+    position: absolute;
+    left: 40%;
+}
+
+.conten-kh h2 {
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    color: darkblue;
+}
+
+.ttkh {
+    width: 100%;
+}
+
+.ttkh table {
+    width: 100%;
+}
+
+.ttkh tr {
+    height: 30px;
+    line-height: 30px;
+}
+
+.ttkh tr td {
+    text-align: center;
+}
+
+.fa.fa-trash,
+.fa.fa-pencil-square-o {
+    font-size: 20px;
+    display: block;
+    cursor: pointer;
+}
+
+.khachhang {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    display: none;
+    position: fixed;
+    top: 5%;
+    left: 40%;
+    z-index: 1000;
+    width: 500px;
+    height: auto;
+    background-color: antiquewhite;
+}
+
+.khachhang table {
+    width: 400px;
+    margin: auto;
+}
+
+.khachhang table tr {
+    height: 30px;
+    line-height: 30px;
+}
+
+.khachhang table tr td input {
+    width: 100%;
+    height: 30px;
+    border: none;
+}
+
+.khachhang table tr td button {
+    width: 100px;
+    height: 30px;
+}
+i.fa.fa-sign-out {
+    margin-left: 20px;
+    cursor: pointer;
+}
+i.fa.fa-sign-out:hover{
+    color: white;
+}
+
+i.fa.fa-star {
+    color: yellow;
+}
